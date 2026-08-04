@@ -14,7 +14,7 @@ make mrproper
 PHONE="dipper"
 ARCH="arm64"
 SUBARCH="arm64"
-DEFCONFIG=nh-dipper_defconfig
+DEFCONFIG=dipper-droidspaces_defconfig
 COMPILER=clang
 LINKER=""
 COMPILERDIR="$(pwd)/clang"
