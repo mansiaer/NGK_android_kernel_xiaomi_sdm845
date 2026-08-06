@@ -16,6 +16,10 @@ jobs:
            bash build-dipper.sh
 
       - store_artifacts:
+           path: log.txt
+           destination: log.txt
+           
+      - store_artifacts:
           path: zone_dipper/dipper.zip
           destination: dipper.zip
 
