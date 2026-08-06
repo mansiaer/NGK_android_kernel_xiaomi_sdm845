@@ -1,5 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
+set -o pipefail
 # Many parts of this script were taken from @REIGNZ, @idkwhoiam322 and @raphielscape . Huge thanks to them.
 
 # KernelSu
@@ -63,7 +64,7 @@ NM=llvm-nm \
 OBJCOPY=llvm-objcopy \
 OBJDUMP=llvm-objdump \
 STRIP=llvm-strip \
-LD_LIBRARY_PATH=${COMPILERDIR}/lib
+LD_LIBRARY_PATH=${COMPILERDIR}/lib 2>&1 | tee log.txt
 }
 
 # Make defconfig
